@@ -1,8 +1,7 @@
-
 package com.AutomationTalks.demoProject1;
-
 import java.time.Duration;
-import org.testng.annotations.*;
+
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
