@@ -1,22 +1,35 @@
 package com.AutomationTalks.demoProject1;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TestClass1 
 {
 	public static WebDriver driver;
 	
 	@BeforeMethod
-	public void launchDriver() 
+	public void launchDriver() throws IOException 
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Guru\\Desktop\\Drivers\\chromedriver.exe");
-		driver=new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		
+		options.setPlatformName("WINDOWS");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Guru\\Desktop\\Drivers\\chromedriver.exe");
+		 URL hubUrl = new URL("http://192.168.0.254:4444/wd/hub");
+		 driver = new RemoteWebDriver(hubUrl, options);
+			
+		//driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().fullscreen();
 		
