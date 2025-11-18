@@ -1,0 +1,10 @@
+12:11:40.318 [main] INFO  c.b.launchers.LaunchMavenCommand - Executing maven archetype command - browserstack-sdk-archetype-integrate
+12:11:40.639 [main] INFO  c.b.launchers.LaunchMavenCommand - The maven properties for launcher are [archetypeVersion=1.5, archetypeGroupId=com.browserstack, archetypeArtifactId=browserstack-sdk-archetype-integrate, BROWSERSTACK_ACCESS_KEY=S6CQpTuszscY2woqstsw, groupId=com.browserstack, artifactId=java-archetype-integrate, BROWSERSTACK_USERNAME=rukhsana_2Jz54B, BROWSERSTACK_FRAMEWORK=java, BUILD_NAME=browserstack build, version=1.0, PROJECT_NAME=BrowserStack Sample, BROWSERSTACK_SOURCE=java:eclipse:v1.0.10]
+12:14:29.553 [Worker-0: Launching AppTest, ...] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+12:14:29.561 [Worker-0: Launching AppTest, ...] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+12:14:29.565 [Worker-0: Launching AppTest, ...] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:14:29.567 [Worker-0: Launching AppTest, ...] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.10}
+12:23:39.912 [Worker-24: Launching TestClass1] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+12:23:39.917 [Worker-24: Launching TestClass1] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+12:23:39.926 [Worker-24: Launching TestClass1] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:23:39.929 [Worker-24: Launching TestClass1] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.10}
